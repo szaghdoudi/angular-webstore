@@ -1,0 +1,46 @@
+<div class="panel produit" *ngIf="product">
+	<div class="message alert alert-info" *ngIf="message">{{message}}</div>
+	<div class="panel-heading">Formulaire : {{product.name}}</div>
+	<div class="panel-body">
+		<form #f="ngForm" class="product" method="get" action="#" enctype="application/x-www-form-urlencoded" name="f">
+			<div>
+				<label for="id">id</label>
+				<input [(ngModel)]="product.id" readonly id="id" name="id">
+			</div>
+			<div>
+				<label for="idCat">id cat</label>
+					<select [(ngModel)]="product.idCat" id="idCat" name="idCat">
+						<option *ngFor="let c of categories" value="{{c.id}}">{{c.name}}</option>
+					</select>
+<!--				<input [(ngModel)]="product.idCat" id="idCat"  name="idCat"> -->
+			</div>
+			<div>
+				<label for="price">prix</label>
+				<input [(ngModel)]="product.price" id="price"  name="price" type="number" min="0.01" max="9999.99" step="0.01" required #price="ngModel">
+			</div>
+			<div class="error alert alert-danger" *ngIf="price.errors?.required">Le prix est obligatoire</div>
+			<div>
+				<label for="name">Nom</label>
+				<input #name="ngModel" [(ngModel)]="product.name" required id="name" pattern="^[A-Z].*$" title="Le nom est obligatoire !" name="name">
+			</div>
+			<div class="error alert alert-danger" *ngIf="name.errors?.required">Le nom est obligatoire</div>
+			<div class="error alert alert-danger" *ngIf="name.errors?.pattern">Le nom commence par une majuscule</div>
+			<div class="error alert alert-danger" *ngIf="name.invalid">Le nom est obligatoire et commence par une majuscule</div>
+			<div>
+				<label for="image">image</label>
+				<input [(ngModel)]="product.image" id="image"  name="image">
+			</div>
+			<div>
+				<label for="desc">desc</label>
+				<input [(ngModel)]="product.desc" id="desc" name="desc">
+			</div>
+			<div class="buttons row">
+				<button [attr.disabled]="(0==product.id)?'disabled':null" class="btn btn-info col-xs-6" (click)="newProduct()">Nouveau</button>
+				<button  class="btn btn-warning col-xs-6" (click)="saveProduct()" [disabled]="f.invalid">Enregistrer</button>
+				<button [attr.disabled]="(0==product.id)?'disabled':null" class="btn btn-success col-xs-6" (click)="resetProduct()">Réinitialiser</button>
+				<button [attr.disabled]="(0==product.id)?'disabled':null" class="btn btn-danger col-xs-6" (click)="deleteProduct()">Supprimer</button>
+			</div>
+		</form>
+	</div>
+	<div class="panel-footer">Formulaire produit</div>
+</div>

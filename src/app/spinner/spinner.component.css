@@ -1,0 +1,46 @@
+.spinner {
+	position: absolute;
+	width: 10rem;
+	text-align: center;
+	font-size: 1rem;
+	border: 0.05rem solid black;
+	box-shadow: 1rem 1rem 1rem #808080;
+	background-color: #ffaaaa;
+	border-radius: 1rem;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.spinner .title {
+	font-weight: bold;
+	color: red;
+	text-transform: uppercase;
+}
+
+.spinner .text {
+	font-style: italic;
+}
+
+
+.loader {
+  border: 0.8rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 0.8rem solid #666;
+  width: 5rem;
+  height: 5rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

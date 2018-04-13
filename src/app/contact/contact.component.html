@@ -1,0 +1,61 @@
+<section id="contact">
+	<h2>Formulaire de contact</h2>
+	<div class="container">
+	  <form class="form-horizontal" name="f" id="f" (ngSubmit)="saveContact()">
+		<div class="form-group">        
+		  <div class="col-sm-offset-2 col-sm-9">
+			<div class="checkbox">
+			  <label for="utiliser"><input type="checkbox" id="utiliser" name="utiliser" value="true" [(ngModel)]="contact.usePerso"> Utilisez mes données personnelles à des fins non avouables ok !</label>
+			</div>
+		  </div>
+		</div>
+		<div class="form-group">        
+		  <div class="col-sm-offset-2 col-sm-9">
+			<div class="radio radio-inline">
+				<fieldset>
+					<legend class="sr-only">Civilité :</legend>
+					<label for="civM"><input type="radio" checked id="civM" name="civilite" value="1" [(ngModel)]="contact.gender"> Monsieur</label>
+					<label for="civMme"><input type="radio" id="civMme" name="civilite" value="2" [(ngModel)]="contact.gender"> Madame</label>
+					<label for="civMle"><input type="radio" id="civMle" name="civilite" value="3" [(ngModel)]="contact.gender"> Mademoiselle</label>
+				</fieldset>         
+			</div>
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label class="control-label col-sm-2" for="firstname">Prénom:</label>
+		  <div class="col-sm-9">
+			<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Votre prénom" title="Le prénom est obligatoire et il commence par une majuscule !" pattern="[A-Z]\w{1,49}" required [(ngModel)]="contact.firstname"><span></span>
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label class="control-label col-sm-2" for="name">Nom:</label>
+		  <div class="col-sm-9">
+			<input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" title="Le prénom est obligatoire et en majuscules, ex: BALL" pattern="[A-Z]{2,50}" required  [(ngModel)]="contact.name"><span></span>
+		  </div>
+		</div>
+		<div class="form-group has-error">
+		  <label class="control-label col-sm-2" for="email">E-mail :</label>
+		  <div class="col-sm-9">
+			<input type="email" class="form-control" id="email" name="email" placeholder="Entrez votre email !" title="saisissez un e-mail valide !" [(ngModel)]="contact.email"><span></span>
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label class="control-label col-sm-2" for="message">Message :</label>
+		  <div class="col-sm-9">          
+			<textarea class="form-control" id="message" name="message" [(ngModel)]="contact.message"></textarea>
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label class="control-label col-sm-2" for="contactDate">Me contacter le :</label>
+		  <div class="col-sm-9">
+			<input type="date" class="form-control" id="contactDate" name="contactDate"  [(ngModel)]="contact.contactDate"><span></span>
+		  </div>
+		</div>
+		<div class="form-group">        
+		  <div class="col-sm-12">
+			<button type="submit" class="btn btn-lg btn-success btn-block active" accesskey="e">Envoyer</button>
+		  </div>
+		</div>
+	  </form>
+	</div>
+</section>

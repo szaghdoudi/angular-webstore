@@ -1,0 +1,42 @@
+<article>
+	<h2>Produits</h2>
+	<p>Les produits</p>
+	<section>
+		<h3>Liste des produits</h3>
+		
+		<app-spinner *ngIf="!products" text="Chargement des produits"></app-spinner>
+
+		<div class="produits">
+			<table class="table table-responsive table-bordered table-striped table-condensed table-hover" *ngIf="products">
+				<thead>
+					<tr class="fields">
+						<th>Id</th>
+						<th>Nom</th>
+						<th>Prix</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="produit"  [class.selected]="p === product" *ngFor="let p of products" (click)="onSelectProduct(p)">
+						<td class="number"><span class="badge">{{p.id}}</span></td>
+						<td>{{p.name}}</td>
+						<td class="number">{{p.price | currency}}</td>
+						<td>
+							<a routerLink="/fiche-produit/{{p.id}}" class="glyphicon glyphicon-eye-open">&nbsp;</a>
+
+							<a routerLink="/form-produit/{{p.id}}" class="glyphicon glyphicon-pencil">&nbsp;</a>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<button class="btn btn-success" (click)="onSelectProduct(null)"  *ngIf="product">Cacher fiche {{product.name}}</button>
+		<div class="clearfix"></div>
+		<app-product-detail class="pull-left" [product]="product" [categories]="categories" *ngIf="product"></app-product-detail>
+		<app-product-form class="pull-left" [product]="product" [categories]="categories" *ngIf="product"></app-product-form>
+		<div class="clearfix"></div>
+		<!-- <app-product-detail [product]="products[0]"></app-product-detail> -->
+
+	</section>
+</article>

@@ -1,0 +1,18 @@
+.panel.produit {
+	margin: 1rem;
+	border-radius: 1rem 1rem 0 0;
+	width: 30rem;
+	box-shadow: 1rem 1rem 1rem #808080;
+}
+
+.panel.produit .panel-heading {
+	color: white;
+	background-color: deeppink;
+	font-weight: bold;
+}
+
+.panel.produit img {
+	width: 80%;
+	display: block;
+	margin: 0.5rem auto;
+}

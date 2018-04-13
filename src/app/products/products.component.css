@@ -1,0 +1,5 @@
+div.produits>table.table>tbody>tr.selected {
+	background-color: darkorange;
+	color: white;
+}
+

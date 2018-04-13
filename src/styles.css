@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+	padding: 5rem 1rem;
+}
+
+.debug {
+	border: 0.05rem dashed red;
+}
+
+.number {
+	text-align: right;
+}
+
+th {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+span.field-name {
+	display: inline-block;
+	min-width: 6rem;
+}
+
+span.field-name::after {
+	content: ' : ';
+}
+
+.selected {
+	background-color: darkorange;
+	color: white;
+}
+
+.message, .error {
+	margin-right: 2rem;
+}
+
+
+
+
+

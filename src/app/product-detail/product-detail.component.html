@@ -1,0 +1,11 @@
+<div class="panel produit" *ngIf="product">
+	<div class="panel-heading">Fiche : {{product.name}}</div>
+	<div class="panel-body">
+		<p><img src="assets/{{product.image}}" alt="image du produit : {{product.name}}" title="{{product.desc}}" class="img-thumbnail"></p>
+		<p><span class="field-name">Catégorie</span>{{categorieName}}</p>
+		<p><span class="field-name">ID Cat</span>{{product.idCat}}</p>
+		<p><span class="field-name">Prix</span>{{product.price}} €</p>
+		<p><span class="field-name">Desc</span>{{product.desc}}</p>
+	</div>
+	<div class="panel-footer">Fiche produit</div>
+</div>

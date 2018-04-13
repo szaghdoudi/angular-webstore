@@ -1,0 +1,23 @@
+#main {
+	padding: 0.5rem;
+	text-align: justify;
+}
+
+#main h2 {
+	text-transform: uppercase;
+}
+
+#main h3 {
+	font-variant: small-caps;
+}
+/*
+#main section .produit {
+	padding: 0.5rem;
+	margin: 0.5rem;
+	border: 0.05rem solid black;
+	border-radius: 0.5rem;
+	text-align: center;
+	font-style: italic;
+	box-shadow: 1rem 1rem 1rem #808080;
+}
+*/

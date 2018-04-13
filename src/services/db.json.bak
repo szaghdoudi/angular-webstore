@@ -1,0 +1,228 @@
+{
+  "user": {
+	"login":"Cyril"
+	, "password":"12345678"
+  }
+  , "categories": [
+    {
+      "id": 1,
+      "name": "Alimentation"
+    },
+    {
+      "id": 2,
+      "name": "Gros électro"
+    },
+    {
+      "id": 3,
+      "name": "Petit électro"
+    },
+    {
+      "id": 4,
+      "name": "Jardin"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "idCat": 1,
+      "price": 4.99,
+      "name": "Pommes de Normandie",
+      "desc": "Les plus belles pommes... Juteuses et goûteuses !",
+      "image": "images/produits/pommes.jpg"
+    },
+    {
+      "id": 2,
+      "idCat": 1,
+      "price": 7.99,
+      "name": "Oranges de Tunisie",
+      "desc": "Mangez des oranges bien mûres et sucrées même en plein hivers !",
+      "image": "images/produits/oranges.jpg"
+    },
+    {
+      "id": 3,
+      "idCat": 1,
+      "price": 3.99,
+      "name": "Salade de nos campagnes",
+      "desc": "Que diriez-vous d'une belle salade bien croquante en cette saison ?",
+      "image": "images/produits/salades.jpg"
+    },
+    {
+      "id": 4,
+      "idCat": 2,
+      "price": 1199.9,
+      "name": "Machine à laver Whirl...",
+      "desc": "Une des meilleures machines à laver du moment !",
+      "image": "images/produits/machinesalaver.jpg"
+    },
+    {
+      "id": 5,
+      "idCat": 3,
+      "price": 49.95,
+      "name": "Fer à repasser Se...",
+      "desc": "Un très bon fer à repasser équipé de sa centrale vapeur...",
+      "image": "images/produits/ferarepasser.jpg"
+    },
+    {
+      "id": 6,
+      "idCat": 4,
+      "price": 15,
+      "name": "Râteau",
+      "desc": "Le rateau est indispensable pour tous les travaux de jardinage...",
+      "image": "images/produits/rateau.jpg"
+    },
+    {
+      "id": 7,
+      "idCat": 1,
+      "price": 19.95,
+      "name": "Entrecôte",
+      "desc": "De belles entrecôtes persillées et goûtues, issues de race à viande !",
+      "image": "images/produits/viandes.jpg"
+    },
+    {
+      "id": 8,
+      "idCat": 1,
+      "price": 45,
+      "name": "Framboises surgelées",
+      "desc": "Toutes fraiches cueillies, aussitôt congelées !",
+      "image": "images/produits/surgeles.jpg"
+    },
+    {
+      "id": 9,
+      "idCat": 3,
+      "price": 79.9,
+      "name": "Machine à expresso",
+      "desc": "Une superbe machine à expresso qui ravira vos papilles autant que vos yeux !",
+      "image": "images/produits/expresso.jpg"
+    },
+    {
+      "id": 10,
+      "idCat": 3,
+      "price": 44.99,
+      "name": "Machine à chocolat",
+      "desc": "Faites vous-même, à la maison un chocolat onctueux et savoureux comme au salon de thé !",
+      "image": "images/produits/machinechoco.jpg"
+    },
+    {
+      "id": 11,
+      "idCat": 1,
+      "price": 9.99,
+      "name": "Légumes frais",
+      "desc": "Recevez, chez vous, un panier de légumes de saison à quantité variable selon la production du producteur !",
+      "image": "images/produits/legumes.jpg"
+    },
+    {
+      "id": 12,
+      "idCat": 1,
+      "price": 1.99,
+      "name": "Yahourt maison",
+      "desc": "Goûtez nos délicieux yahourts maison !",
+      "image": "images/produits/yahourts.jpg"
+    },
+    {
+      "id": 13,
+      "idCat": 2,
+      "price": 2399.99,
+      "name": "Réfrigérateur américain",
+      "desc": "Enfin un réfrigérateur américain qui ne vous laissera pas en panne de glaçons...",
+      "image": "images/produits/refrigerateur.jpg"
+    },
+    {
+      "id": 14,
+      "idCat": 3,
+      "price": 25,
+      "name": "Sèche cheveux",
+      "desc": "Un superbe sèche cheveux pour femme au design envoûtant !",
+      "image": "images/produits/sechecheveux.jpg",
+      "price": 29.99
+    },
+    {
+      "id": 15,
+      "idCat": 1,
+      "price": 4.99,
+      "name": "Expresso italien",
+      "desc": "le meilleur expresso au monde !",
+      "image": ""
+    },
+    {
+      "id": 16,
+      "idCat": 1,
+      "price": 4.5,
+      "name": "12 pains au chocolat",
+      "desc": "Des pains au chocolat tout chauds, pour toute la famille, chaque matins !",
+      "image": ""
+    },
+    {
+      "id": 17,
+      "idCat": 1,
+      "price": 0.99,
+      "name": "Chocolat noir 72%",
+      "desc": "Un chocolat idéal pour le café.",
+      "image": ""
+    },
+    {
+      "idCat": 4,
+      "price": 25,
+      "name": "Pelle",
+      "desc": "Super pelle",
+      "image": "images/produits/defaut.jpg",
+      "id": 18
+    },
+    {
+      "id": 20,
+      "idCat": 1,
+      "price": 2.99,
+      "name": "Poires de Bretagne",
+      "desc": "Sans doute les meilleures poires du monde !",
+      "image": "images/produits/poires.jpg"
+    },
+    {
+      "id": 52,
+      "idCat": 4,
+      "price": 59.99,
+      "name": "Débroussailleuse",
+      "desc": "Sans doute la meilleure débroussailleuse du monde !",
+      "image": "images/produits/defaut.jpg"
+    },
+    {
+      "idCat": 3,
+      "price": 29.99,
+      "name": "Presse agrumes",
+      "desc": "Sans doute le meilleur presse agrume du monde !",
+      "image": "images/produits/defaut.jpg",
+      "id": 54
+    },
+    {
+      "idCat": 1,
+      "price": 12.52,
+      "name": "Figues du Désert",
+      "image": "images/produits/defaut.jpg",
+      "desc": "Sans doute les meilleures figues du monde !",
+      "id": 55,
+      "idCat": 1
+    },
+    {
+      "idCat": 3,
+      "price": 19.99,
+      "name": "Fer à friser",
+      "image": "images/produits/defaut.jpg",
+      "desc": "Sans doute le meilleur fer à friser du monde !",
+      "id": 56
+    },
+    {
+      "idCat": 2,
+      "price": 1999.99,
+      "name": "Armoire de brassage",
+      "image": "images/produits/defaut.jpg",
+      "desc": "The best one !",
+      "id": 57
+    },
+    {
+      "idCat": 1,
+      "price": 0.01,
+      "name": "Coucou",
+      "image": "images/produits/defaut.jpg",
+      "desc": "",
+      "id": 58
+    }
+  ]
+}
