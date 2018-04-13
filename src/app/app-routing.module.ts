@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'accueil', component: WelcomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'aide', component: HelpComponent },
-  { path: 'fiche-produit/:id', component: ProductDetailComponent },
+  { path: 'fiche-produit/:id', data: {categories: [{"id": 1,"name": "Alimentation"},{"id": 2,"name": "Gros électro"},{"id": 3,"name": "Petit électro"},{"id": 4,"name": "Jardin"}]}, component: ProductDetailComponent },
   { path: 'form-produit/:id', component: ProductFormComponent },
   { path: 'categories/:idCat', component: ProductsComponent },
   { path: 'produits', component: ProductsComponent }
